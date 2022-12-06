@@ -1,0 +1,43 @@
+uuid: 0295d945-dd5a-42a2-a29d-f645ba9b4ef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.products.body
+    - field.field.node.products.field_products_image
+    - field.field.node.products.field_products_link
+    - node.type.products
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 0fsB-0xk_L-e7DM70PUc4-qvAE59766KlhrCAHrcauY
+id: node.products.default
+targetEntityType: node
+bundle: products
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_products_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_products_link: true

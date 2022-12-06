@@ -1,0 +1,28 @@
+uuid: a632099d-1eea-40b6-b1ea-21398b81fdaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - jugaad
+    - node
+  theme:
+    - bartik
+id: qrcodeofcurrentproduct
+theme: bartik
+region: sidebar_second
+weight: -6
+provider: null
+plugin: qr_code_block
+settings:
+  id: qr_code_block
+  label: 'QR code of current product'
+  label_display: visible
+  provider: jugaad
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      products: products

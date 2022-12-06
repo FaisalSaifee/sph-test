@@ -1,0 +1,7 @@
+name: Jugaad
+type: module
+description: 'Create Products content type for Jugaad Patches'
+core_version_requirement: ^8 || ^9
+package: 'Jugaad Patches'
+dependencies:
+  - node

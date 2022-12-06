@@ -1,0 +1,3 @@
+services:
+  jugaad.jp:
+    class: Drupal\jugaad\GetQRService
